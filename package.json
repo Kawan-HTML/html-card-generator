@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "cross-env HOST=0.0.0.0 PORT=2221 nuxt",
-    "build": "nuxt build",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt build",
     "start": "node server.js",
-    "generate": "nuxt generate"
+    "generate": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt generate"
   },
   "engines": {
     "node": "20.x"
