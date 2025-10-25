@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env HOST=0.0.0.0 PORT=2221 nuxt",
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt build",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt generate",
     "start": "node server.js",
     "generate": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt generate"
   },
@@ -27,7 +27,6 @@
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@nuxtjs/tailwindcss": "^5.0.4",
-    "@nuxtjs/vercel-builder": "^0.21.3",
     "cross-env": "^7.0.3",
     "raw-loader": "^4.0.2",
     "sass": "^1.52.1",
